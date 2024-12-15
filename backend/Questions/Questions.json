@@ -1,0 +1,646 @@
+[
+    {
+        "questionId": "SINGLENUM",
+        "questionName": "Single Number",
+        "description": "Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.You must implement a solution with a linear runtime complexity and use only constant extra space.",
+        "inputFormat": [
+            "The first line of input will contain a single integer T, denoting the number of test cases.",
+            "Each test case consists of multiple lines of input.",
+            "N denoting no of size of array",
+            "followed by N integer elements"
+        ],
+        "outputFormat": [
+            "each line consists of single integer for each testcase"
+        ],
+        "constrains": [
+            "1 <=  T <= 1000 ",
+            "1 <= N <= 100000",
+            "Each element in the array appears twice except for one element which appears only once."
+        ],
+        "difficulty": 600,
+        "usersSolved": [],
+        "tags": [
+            "arrays"
+        ],
+        "example": [
+            "Input: arr={1,2,3,2,1}",
+            "output: 3",
+            "Except number 3 all of them repeated twice"
+        ]
+    },
+    {
+        "questionId": "HACKERMAN",
+        "questionName": "Hackerman",
+        "description": "Hackerman wants to know who is the better player between Bob and Alice with the help of a game. The game proceeds as follows:\n First Alice throws a die and gets the number A \nThen, Bob throws a die and gets the number B, \nAlice wins the game if the sum on the dice is a prime number; and Bob wins otherwise. \nGiven A and B, determine who wins the game.",
+        "inputFormat": [
+            "The first line of input will contain a single integer T, denoting the number of test cases.",
+            "Then Integer N denotes of elements in each test case",
+            "The first and only line of each test case contains two space-separated integers A and B."
+        ],
+        "outputFormat": [
+            "For each test case, output on a new line the winner of the game: Alice or Bob.",
+            "Each letter of the output may be printed in uppercase ONLY i.e, Alice, ALICE, AlIce and aLIcE will not be considered equivalent."
+        ],
+        "constrains": [
+            "1 ≤ T ≤ 36",
+            "1 ≤ A ≤6",
+            "1 ≤ B ≤ 6"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ],
+        "example": [
+            "1.Input: 1 3",
+            "output: BOB",
+            "Sum of dice thrown is 1 + 3 = 4, which is not prime number so Bob wins the game",
+            "2.Input: 4 3",
+            "output: ALICE",
+            "Sum of dice thrown is 4 + 3 = 7, which is prime no so Alice wins."
+        ]
+    },
+    {
+        "questionId": "FBALL",
+        "questionName": "Football",
+        "description": "Chef is watching a football match. The current score is A:B, that is, team 1 has scored A goals and team 2 has scored B goals. Chef wonders if it is possible for the score to become C:D at a later point in the game (i.e. team 1 has scored C goals and team 2 has scored D goals). Can you help Chef by answering his question?",
+        "inputFormat": [
+            "The first line contains a single integer T - the number of test cases. Then the test cases follow.",
+            "The first line of each test case contains two integers A and B - the intial number of goals team 1 and team 2 have scored respectively.",
+            "The second line of each test case contains two integers C and D - the final number of goals team 1 and team 2 must be able to score respectively. "
+        ],
+        "outputFormat": [
+            "For each testcase, output POSSIBLE if it is possible for the score to become C:DC:D at a later point in the game, IMPOSSIBLE otherwise.",
+            "You may print each character of POSSIBLE and IMPOSSIBLE in uppercase ONLY (for example, possible, pOSsiBLe, Possible will not be considered identical)"
+        ],
+        "constrains": [
+            "1 ≤ T ≤ 1000",
+            "0 ≤ A,B,C,D ≤ 10"
+        ],
+        "difficulty": 400,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "questionId": "QUALIFY",
+        "questionName": "Qualify the round",
+        "description": "In a coding contest, there are two types of problems: Easy problems, which are worth 1 point each Hard problems, which are worth 2 points each To qualify for the next round, a contestant must score at least X points. Chef solved A Easy problems and B Hard problems. Will Chef qualify or not?",
+        "inputFormat": [
+            "The first line of input contains a single integer T, denoting the number of test cases.",
+            "The description of T test cases follows.",
+            "Each test case consists of a single line of input containing three space-separated integers — X,A and B."
+        ],
+        "outputFormat": [
+            "For each test case, output a new line containing the answer — Qualify if Chef qualifies for the next round, and Not Qualify otherwise.",
+            "Each character of the answer may be printed in uppercase ONLY.",
+            "For example, if the answer is Qualify, outputs such as qualify, quALiFy, QUALIFY and QuAlIfY will not be accepted as correct."
+        ],
+        "constrains": [
+            "1 ≤ T ≤ 100",
+            "1 ≤ X ≤ 100",
+            "0 ≤ A,B ≤ 100"
+        ],
+        "difficulty": 400,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ],
+        "example":[
+            "Input: 3 2 target=6",
+            "Output:YES 3 + 2 *2 = 7 , 7>=6",
+            "Input: 3 1 target=6",
+            "Output:NO 3 + 1 *2 = 5 , 7<6"
+        ]
+    },
+    {
+        "questionId": "HOTCOLD",
+        "questionName": "Is it hot or cold",
+        "description": "Chef considers the climate HOT if the temperature is above 20, otherwise he considers it COLD. You are given the temperature C, find whether the climate is HOT or COLD.",
+        "inputFormat": [
+            "The first line of input will contain a single integer T,denoting the number of testcases",
+            "Then Integer N denotes of elements in each test case",
+            "Followeb by a single integer, the temperature C"
+        ],
+        "outputFormat": [
+            "For each test case, print on a new line whether the climate is HOT or COLD.Print each character of the string in  uppercase ONLY(for example, the strings hOt, hot, Hot, and HOT will not be treated as identical)."
+        ],
+        "constrains": [
+            "1 ≤ T ≤ 50",
+            "1<N<10000",
+            "0 < C <= 40"
+        ],
+        "difficulty": 410,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ],
+        "example": [
+            "Input: 10",
+            "output: COLD, as temperature is less than 20",
+            "Input: 30",
+            "output: HOT as temperature is above 20"
+        ]
+    },
+    {
+        "questionId": "EXPBREAD",
+        "questionName": "Expiring Bread",
+        "description": "Eikooc loves bread. She has N loaves of bread, all of which expire after exactly M days. She can eat upto K loaves of bread in a day. Can she eat all the loaves of bread before they expire?",
+        "inputFormat": [
+            "The first line contains a single integer T - the number of test cases. Then the test cases follow.",
+            "Each test case consists of a single line containing three integers N,M and K - the number of loaves of bread Eikooc has, the number of days after which all the breads will expire and the number of loaves of bread Eikooc can eat in a day."
+        ],
+        "outputFormat": [
+            "For each test case, output Yes if it will be possible for Eikooc to eat all the loaves of bread before they expire.",
+            "Each letter of the output may be printed in  uppercase ONLY  i.e, Yes yEs yeS YeS will not be considered equivalent."
+        ],
+        "constrains": [
+            "1≤T≤1000",
+            "1≤N,M,K≤100"
+        ],
+        "difficulty": 440,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ],
+        "example": [
+            "1.Input: 2 3 1",
+            "output: YES",
+            "2 bread loaves are left and she can eat 1 bread per day , she needs 2 days to eat all of them in 2 days which is less than expiry day",
+            "2. Input 3 2 1",
+            "Output: NO",
+            "3 bread loaves are left and she can eat 1 per day a and she needs 3 days to eat them but they will expire in 2 days"
+        ]
+    },
+    {
+        "questionId": "FACT1",
+        "questionName": "Small factorials",
+        "description": "You are asked to calculate factorials of some small positive integers.",
+        "inputFormat": [
+            "An integer t, denoting the number of testcases, followed by t lines, each containing a single integer n"
+        ],
+        "outputFormat": [
+            " For each integer n given at input, display a line with the value of n!",
+            "Note: For larger numbers, their factorial can overflows any available numeric data type in C.",
+            "use 8 Byte data type such as long"
+        ],
+        "constrains": [
+            " 1<=t<=100",
+            " 1<=n<=20,"
+        ],
+        "difficulty": 600,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ],
+        "example": [
+            "Input 5",
+            "Output 120, 1*2*3*4*5 = 120"
+        ]
+    },
+    {
+        "questionId": "LITRATE",
+        "questionName": "Literacy Rate",
+        "description": "You are given two positive integers P and L denoting the total population of Chefland and the total number of literate people in Chefland.\n Find whether the literacy rate of Chefland is greater than or equal to 75%.\n Note that the literacy rate is calculated as L/P * 100 ",
+        "inputFormat": [
+            "The first line of input will contain a single integer T, denoting the number of test cases.",
+            "Then Integer N denotes of elements in each test case",
+            "Each test case consists of two space-separated integers P and L — the total population and the total number of literate people in Chefland respectively"
+        ],
+        "outputFormat": [
+            "For each test case, output on a new line, YES, if the literacy rate of Chefland is greater than or equal to 50%. Otherwise, output NO.",
+            "You may print each character of the string in uppercase ONLY (for example, the strings YES, yEs, yes, and yeS will not be treated as identical)."
+        ],
+        "constrains": [
+            "1≤T≤6000",
+            "1≤L≤P≤100"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ],
+        "example": [
+            "1.Input: 100 50",
+            "Output: YES 50/100 * 100 = 50, which is >= 50",
+            "2. Input 120 40",
+            "Output: NO, 40/120 * 100 = 33.33, which is < 50"
+        ]
+    },
+    {
+        "questionId": "PAINTW",
+        "questionName": "Painting Walls",
+        "description": "Chef wants to decorate his house by painting the walls this Christmas.Each wall has a dimension of X m and Y m.\nIf the cost of paint is 2 rupees per m square, find the maximum number of walls Chef can paint completely with Z rupees.",
+        "inputFormat": [
+            "The first line of input will contain a single integer T, denoting the number of test cases",
+            "Each test case consists of three space-separated integers X,Y and Z — where X and Y denote the dimensions of each wall in metres and Z denotes the money Chef has."
+        ],
+        "outputFormat": [
+            "For each test case, output on a new line, the maximum number of walls Chef can paint completely with Z rupees."
+        ],
+        "constrains": [
+            "1 ≤ T ≤ 10000",
+            "1 ≤ X,Y ≤ 1000",
+            "1 ≤ Z ≤ 1000"
+        ],
+        "difficulty": 550,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "questionId": "MINMAX",
+        "questionName": "Min and Max in Array",
+        "description": "Given an array arr. Your task is to find the minimum and maximum elements in the array.",
+        "inputFormat": [
+            "Integer T denoting no of test cases and integer N deonting size of array",
+            "followed by N integers in one line "
+        ],
+        "outputFormat": [
+            "Print minimum and maximum element in one line"
+        ],
+        "constrains": [
+            "1 <= T <= 10000",
+            "1 <= N <=10000"
+        ],
+        "difficulty": 400,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures"
+        ],
+        "example": [
+            "Input: arr={1,4,3,6,2}",
+            "output: 1 6, 1 is minimun and 6 is maximum in this array"
+        ]
+    },
+    {
+        "questionId": "SUMARRAY",
+        "questionName": "Sum of Array",
+        "description": "The task is to find  sum  of array it.",
+        "inputFormat": [
+            "First line denoting no of testcases, ",
+            "Second line denotes no of elements in array",
+            "Followed by N integers in one line "
+        ],
+        "outputFormat": [
+            "Single number that is sum of array elements"
+        ],
+        "constrains": [
+            " 1<=T<=100,",
+            " 1<=N<=100000,"
+        ],
+        "difficulty": 550,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures"
+        ],
+        "example": [
+            "Input: arr={1,4,3,6,2}",
+            "output: 16 , 1+4+3+6+2 = 16"
+        ]
+    },
+    {
+        "questionId": "ROTATE",
+        "questionName": "Rotate Array by One",
+        "description": "Given an array arr, rotate the array by one position in counter clock-wise direction.",
+        "inputFormat": [
+            "First line consisting of N integer deonting size of array",
+            "Second line consists N integer elements"
+        ],
+        "outputFormat": [
+            "print rotated array in single line"
+        ],
+        "constrains": [
+            "1<=N<=10000",
+            "0<=<=1000"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures"
+        ],
+        "example": [
+            "Input: arr={1,4,3,6,2}",
+            "Output: 4 3 6 2 1, move first element to last"
+        ]
+    },
+    {
+        "questionId": "EQUALARRAY",
+        "questionName": "Check Equal Arrays",
+        "description": "Given two arrays arr1 and arr2 of equal size, the task is to find whether the given arrays are equal. Two arrays are said to be equal if both contain the same set of elements, arrangements (or permutations) of elements may be different though.Note: If there are repetitions, then counts of repeated elements must also be the same for two arrays to be equal.",
+        "inputFormat": [
+            "First line consists of array of size N",
+            "Second line consists N integer elements of arr1",
+            "Third line consists of N integer element of arr2"
+        ],
+        "outputFormat": [
+            "Print wether the arrays are ture false "
+        ],
+        "constrains": [
+            "1<= arr1.size, arr2.size<=10000",
+            "1<=arr1[i], arr2[i]<=100000"
+        ],
+        "difficulty": 600,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures"
+        ],
+        "example": [
+            "1.Input: arr1={1,4,3,2,5}, arr2={4,5,1,3,2}",
+            "Output: true, all the elements in arr1 are present in arr2 and vice-versa",
+            "2.Input: arr1={1,4,2,3,5}, arr2={1,3,2,5,6}",
+            "output: false, emement 4 and 6 do not match from arr1 and arr2"
+        ]
+    },
+    {
+        "questionId": "EVENODD",
+        "questionName": "Count Odd Even",
+        "description": "Given an array arr[] of positive integers. The task is to print the count of the number of odd and even elements in the array.\nNote: Print the count of two elements where the first one in the count of odd & second one is the count of even.",
+        "inputFormat": [
+            "First line consisting of N integer deonting size of array",
+            "Second line consists N integer elements"
+        ],
+        "outputFormat": [
+            "Space seperated values of count of even and odd numbers"
+        ],
+        "constrains": [
+            "1 <= N <= 100000",
+            "1 <= arr[i] <= 100000"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures"
+        ],
+        "example": [
+            "Input: arr={1,2,3,4,1}",
+            "output: 2 3, even numbers are 2 and 4, odd numbers are 1,1,3"
+        ]
+    },
+    {
+        "questionId": "MISSING",
+        "questionName": "Missing in Array",
+        "description": "You are given an array arr of size n - 1 that contains distinct integers in the range from 1 to n (inclusive). This array represents a permutation of the integers from 1 to n with one element missing. Your task is to identify and return the missing element.",
+        "inputFormat": [
+            "First line consisting of N integer deonting size of array",
+            "Second line consists N distinct from 1 to N-1 integer elements"
+        ],
+        "outputFormat": [
+            "print single line integer that is missing in array"
+        ],
+        "constrains": [
+            "1 ≤ arr.size() ≤ 1000  ≤ arr[i] ≤ arr.size() + 1"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "math",
+            "DataStructures"
+        ],
+        "example": [
+            "Input: arr={1,4,3,6,2}",
+            "Output: 5, element 5 is missing in range 1 to 6"
+        ]
+    },
+    {
+        "questionId": "ARRDUP",
+        "questionName": "Array Duplicates",
+        "description": "Given an array arr of integers, find all the elements that occur more than once in the array. Return the result in ascending order. If no element repeats, return an empty array",
+        "inputFormat": [
+            "First line consisting of N integer deonting size of array",
+            "Second line consists N integer elements"
+        ],
+        "outputFormat": [
+            "Print all elements that occures more than once"
+        ],
+        "constrains": [
+            "1 <= arr.size() <= 100000 ",
+            "0 <= arr[i] <= 100000"
+        ],
+        "difficulty": 600,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "maps",
+            "DataStructures"
+        ],
+        "example": [
+            "Input: arr={1,2,3,2,1,4}",
+            "Output: 1 2, elements 1 and 2 repeate more than once"
+        ]
+    },
+    {
+        "questionId": "ISSORTED",
+        "questionName": "Check if array is sorted",
+        "description": "Given an array arr[], check whether it is sorted in non-decreasing order. Print true if it is sorted otherwise false.",
+        "inputFormat": [
+            "Integer T denoting no of test cases and integer N deonting size of array",
+            "second line consisting of N integer deonting size of array"
+        ],
+        "outputFormat": [
+            "Print true or false"
+        ],
+        "constrains": [
+            " 1<=T<=100,",
+            "1 ≤ arr.size ≤ 10000",
+            "1 ≤ arr[i] ≤ 1000"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures"
+        ],
+        "example": [
+            "1.Input: arr1={1,4,3,2,5}",
+            "Output: false, clearly elements are not in Increasing order",
+            "2.Input: arr1={1,3,4,5}",
+            "output: true, all the elements are in Increasing order"
+        ]
+    },
+    {
+        "questionId": "PRIME",
+        "questionName": "Prime Number",
+        "description": "Given a number n, determine whether it is a prime number or not. A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.",
+        "inputFormat": [
+            "First line consisting of N integers",
+            "Followed by N integers in N lines "
+        ],
+        "outputFormat": [
+            "Print true or false for each integer in new line"
+        ],
+        "constrains": [
+            "1 ≤ n ≤ 100000"
+        ],
+        "difficulty": 600,
+        "usersSolved": [],
+        "tags": [
+            "math"
+        ],
+        "example": [
+            "1.Input: 10",
+            "Output: false, factors of number 10 are 1,2,5 and 10 which clearly do not follow the rule of prime no",
+            "1.Input 5",
+            "output: true, number 5 do not have any factors beside 1 and 5 so it is a prime number"
+        ]
+    },
+    {
+        "questionId": "BSEARCH",
+        "questionName": "Binary Search",
+        "description": "Given a sorted array arr and an integer k, find the position(0-based indexing) at which k is present in the array using binary search.\nNote: If multiple occurrences are there, please return the smallest index.",
+        "inputFormat": [
+            "First line denoting no of testcases,",
+            "Second line denotes no of elements in array",
+            "An integer x deonting target element that need to be found in array",
+            "Followed by N integer elements"
+        ],
+        "outputFormat": [
+            "Print true or false"
+        ],
+        "constrains": [
+            "1 <= arr.size() <= 10000",
+            "1 <= arr[i] <= 10000",
+            "1 <= k <= 10000"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures",
+            "searching"
+        ],
+        "example": [
+            "1.Input: arr={1,2,3,4,6} target=6",
+            "Output:true, element 6 is present in array at index 4",
+            "2. Input arr = {1,2,3,4,6} target= 10",
+            "Output: element 10 is not present in array"
+        ]
+    },
+    {
+        "questionId": "LSEARCH",
+        "questionName": "Linear Search",
+        "description": "Given a sorted array arr and an integer k, find the position(0-based indexing) at which k is present in the array using Linear search.\nNote: If multiple occurrences are there, please return the smallest index.",
+        "inputFormat": [
+            "First line denoting no of testcases,",
+            "Second line denotes no of elements in array",
+            "An integer x deonting target element that need to be found in array",
+            "Followed by N integer elements"
+        ],
+        "outputFormat": [
+            "Print true or false"
+        ],
+        "constrains": [
+            "1 <= arr.size() <= 10000",
+            "1 <= arr[i] <= 10000",
+            "1 <= k <= 10000"
+        ],
+        "difficulty": 500,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "DataStructures",
+            "searching"
+        ],
+        "example": [
+            "1.Input: arr={1,4,3,6,2} target=6",
+            "Output:true, element 6 is present in array at index 3",
+            "2. Input arr = {1,4,3,6,2} target= 10",
+            "Output: element 10 is not present in array"
+        ]
+    },
+    {
+        "questionId": "BBLSORT",
+        "questionName": "Sort the Array",
+        "description": "Given an array, arr[]. Sort the array using bubble sort algorithm.",
+        "inputFormat": [
+            "An integer t, denoting the number of testcases",
+            "Second line consisting of N integer deonting size of array",
+            "Followed by N integers in one line "
+        ],
+        "outputFormat": [
+            "Print the sorted Array"
+        ],
+        "constrains": [
+            "1<T<10000",
+            "1 <= arr.size() <= 10000",
+            "1 <= arr[i] <= 10000"
+        ],
+        "difficulty": 550,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "sorting",
+            "DataStructures"
+        ],
+        "example": [
+            "1.Input: arr={1,4,3,6,2}",
+            "Output:1 2 3 4 6"
+        ]
+    },
+    {
+        "questionId": "MERGSORT",
+        "questionName": "Sort the Array",
+        "description": "Given an array, arr[]. Sort the array using Merge sort algorithm.",
+        "inputFormat": [
+            "An integer t, denoting the number of testcases",
+            "Second line consisting of N integer deonting size of array",
+            "Followed by N integers in one line "
+        ],
+        "outputFormat": [
+            "Print the sorted Array"
+        ],
+        "constrains": [
+            "1<T<10000",
+            "1 <= arr.size() <= 10000",
+            "1 <= arr[i] <= 10000"
+        ],
+        "difficulty": 700,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "sorting",
+            "DataStructures"
+        ],
+        "example": [
+            "1.Input: arr={1,4,3,6,2}",
+            "Output:1 2 3 4 6"
+        ]
+    },
+    {
+        "questionId": "QCKSORT",
+        "questionName": "Sort the Array",
+        "description": "Given an array, arr[]. Sort the array using Quick sort algorithm.",
+        "inputFormat": [
+            "An integer t, denoting the number of testcases",
+            "Second line consisting of N integer deonting size of array",
+            "Followed by N integers in one line "
+        ],
+        "outputFormat": [
+            "Print the sorted Array"
+        ],
+        "constrains": [
+            "1<T<10000",
+            "1 <= arr.size() <= 10000",
+            "1 <= arr[i] <= 103"
+        ],
+        "difficulty": 700,
+        "usersSolved": [],
+        "tags": [
+            "arrays",
+            "sorting",
+            "DataStructures"
+        ],
+        "example": [
+            "1.Input: arr={1,4,3,6,2}",
+            "Output:1 2 3 4 6"
+        ]
+    }
+]

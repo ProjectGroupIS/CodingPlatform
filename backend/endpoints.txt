@@ -1,0 +1,85 @@
+http://localhost:8080/ - dashboard
+
+http://localhost:8080/auth/google
+for google authentication
+
+http://localhost:8080/auth/register
+
+method - post
+body if normal registration
+according for user schema
+
+{
+   "name":"non unique user name",
+   "email":"valid email address",
+   "password":"your password",
+   "gender":"male or feamle"
+}
+
+user will be forced to entry proper valid data
+
+
+http://localhost:8080/auth/login
+method post 
+normal login
+body
+{
+   "email":"",
+   "password:""
+}
+
+http://localhost:8080/problems/  
+
+type- get , displays all questions 
+data in pagenated array of json objects 
+also contains data related to previous and next page and no of quesions present
+provides first 10 questions form db in order of difficulty
+
+http://localhost:8080/problems/?page='pageno'&limit='no of questions pre page'&order='1 for ascending -1 for descending'
+eg http://localhost:8080/problems/?page=1&limit=4&order=1
+
+sortBy='any_type_of_problem'
+eg http://localhost:8080/problems/?sortBy=string
+replace string with array, dp ,maps etc
+
+if sortBy not mentioned the all problems are provided as pagented result of array of json 
+
+by default limit is 10 and order is 1
+frontend should take care of changing the page no
+
+http://localhost:8080/problems/:questionId 
+
+eg http://localhost:8080/problems/SINGLENUM
+type - get request
+returns praticular question in json form related to id
+single question json format
+
+
+http://localhost:8080/problems/?groupby='type of question'
+
+eg  http://localhost:8080/problems/?groupby=string
+
+
+http://localhost:8080/execute/run
+type - post request
+input body format - json
+{
+   "language":"anylanguage",
+   "code":"user typed code"
+}
+eg
+{
+   "quesionsId":""
+   "language":"Python",
+   "code":"print(\"hello\")"
+}
+
+send code with proper escape sequence such as \" for double quotes and \n after every next line
+
+op format for all routes
+execution status will be in response status
+200 - executed successgully
+400 - bad request
+{
+   "message":"message related to request , might contain data related to error"
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": "HACKERMAN",
+        "hash": "23c27ccfc69c98088b600edf3cb1853ce2e4b8a219e30fabe8a0d55a35e8904e"
+    },
+    {
+        "id":"PRIME",
+        "hash":"23c27ccfc69c98088b600edf3cb1853ce2e4b8a219e30fabe8a0d55a35e8904e"
+    },
+    {
+        "id":"ISSORTED",
+        "hash":"9b972452aaca92ee5ef2fdc44cc716a9d63678573d43aefd6ed511747360a73a"
+    },
+    {
+        "is":"FACT1",
+        "hash":"2c3bac67a56c6e6de4ce7f091e6b549605d1bc5281fb307f54cf5390be745354"
+    },
+    {
+        "id":"ARRDUP",
+        "hash":"c72aedb3b330969f2cd30e27ca9fbb6c52156e29c540441c412a50da9e0d4ea9"
+    }
+
+]
