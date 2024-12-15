@@ -24,7 +24,7 @@
         ],
         "example": [
             "Input: arr={1,2,3,2,1}",
-            "output: 3",
+            "Output:  3",
             "Except number 3 all of them repeated twice"
         ]
     },
@@ -52,11 +52,11 @@
             "math"
         ],
         "example": [
-            "1.Input: 1 3",
-            "output: BOB",
+            "Input: 1 3",
+            "Output:  BOB",
             "Sum of dice thrown is 1 + 3 = 4, which is not prime number so Bob wins the game",
-            "2.Input: 4 3",
-            "output: ALICE",
+            "Input: 4 3",
+            "Output:  ALICE",
             "Sum of dice thrown is 4 + 3 = 7, which is prime no so Alice wins."
         ]
     },
@@ -95,7 +95,7 @@
         "outputFormat": [
             "For each test case, output a new line containing the answer — Qualify if Chef qualifies for the next round, and Not Qualify otherwise.",
             "Each character of the answer may be printed in uppercase ONLY.",
-            "For example, if the answer is Qualify, outputs such as qualify, quALiFy, QUALIFY and QuAlIfY will not be accepted as correct."
+            "For example, if the answer is Qualify, outputs such as qualify, quALiFy, QUALIFY and QuAlIfY will not be accepted as correct answer."
         ],
         "constrains": [
             "1 ≤ T ≤ 100",
@@ -109,9 +109,9 @@
         ],
         "example":[
             "Input: 3 2 target=6",
-            "Output:YES 3 + 2 *2 = 7 , 7>=6",
+            "Output: YES 3 + 2 *2 = 7 , 7>=6",
             "Input: 3 1 target=6",
-            "Output:NO 3 + 1 *2 = 5 , 7<6"
+            "Output: NO 3 + 1 *2 = 5 , 7<6"
         ]
     },
     {
@@ -138,9 +138,9 @@
         ],
         "example": [
             "Input: 10",
-            "output: COLD, as temperature is less than 20",
+            "Output: COLD, as temperature is less than 20",
             "Input: 30",
-            "output: HOT as temperature is above 20"
+            "Output:  HOT as temperature is above 20"
         ]
     },
     {
@@ -165,12 +165,12 @@
             "math"
         ],
         "example": [
-            "1.Input: 2 3 1",
-            "output: YES",
-            "2 bread loaves are left and she can eat 1 bread per day , she needs 2 days to eat all of them in 2 days which is less than expiry day",
-            "2. Input 3 2 1",
-            "Output: NO",
-            "3 bread loaves are left and she can eat 1 per day a and she needs 3 days to eat them but they will expire in 2 days"
+            "Input: 2 3 1",
+            "Output:  YES",
+            "two bread loaves are left and she can eat 1 bread per day , she needs 2 days to eat all of them in 2 days which is less than expiry day",
+            "Input 3 2 1",
+            "Output:  NO",
+            "three bread loaves are left and she can eat 1 per day a and she needs 3 days to eat them but they will expire in 2 days"
         ]
     },
     {
@@ -181,7 +181,7 @@
             "An integer t, denoting the number of testcases, followed by t lines, each containing a single integer n"
         ],
         "outputFormat": [
-            " For each integer n given at input, display a line with the value of n!",
+            "For each integer n given at input, display a line with the value of n!",
             "Note: For larger numbers, their factorial can overflows any available numeric data type in C.",
             "use 8 Byte data type such as long"
         ],
@@ -208,7 +208,7 @@
             "Then Integer N denotes of elements in each test case",
             "Each test case consists of two space-separated integers P and L — the total population and the total number of literate people in Chefland respectively"
         ],
-        "outputFormat": [
+        "OutputFormat": [
             "For each test case, output on a new line, YES, if the literacy rate of Chefland is greater than or equal to 50%. Otherwise, output NO.",
             "You may print each character of the string in uppercase ONLY (for example, the strings YES, yEs, yes, and yeS will not be treated as identical)."
         ],
@@ -222,10 +222,10 @@
             "math"
         ],
         "example": [
-            "1.Input: 100 50",
-            "Output: YES 50/100 * 100 = 50, which is >= 50",
-            "2. Input 120 40",
-            "Output: NO, 40/120 * 100 = 33.33, which is < 50"
+            "Input: 100 50",
+            "Output:  YES 50/100 * 100 = 50, which is >= 50",
+            "Input 120 40",
+            "Output:  NO, 40/120 * 100 = 33.33, which is < 50"
         ]
     },
     {
@@ -269,11 +269,11 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
             "Input: arr={1,4,3,6,2}",
-            "output: 1 6, 1 is minimun and 6 is maximum in this array"
+            "Output:  1 6, 1 is minimun and 6 is maximum in this array"
         ]
     },
     {
@@ -296,11 +296,11 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
             "Input: arr={1,4,3,6,2}",
-            "output: 16 , 1+4+3+6+2 = 16"
+            "Output:  16 , 1+4+3+6+2 = 16"
         ]
     },
     {
@@ -322,11 +322,11 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
             "Input: arr={1,4,3,6,2}",
-            "Output: 4 3 6 2 1, move first element to last"
+            "Output:  4 3 6 2 1, move first element to last"
         ]
     },
     {
@@ -349,13 +349,13 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
-            "1.Input: arr1={1,4,3,2,5}, arr2={4,5,1,3,2}",
-            "Output: true, all the elements in arr1 are present in arr2 and vice-versa",
-            "2.Input: arr1={1,4,2,3,5}, arr2={1,3,2,5,6}",
-            "output: false, emement 4 and 6 do not match from arr1 and arr2"
+            "Input: arr1={1,4,3,2,5}, arr2={4,5,1,3,2}",
+            "Output:  true, all the elements in arr1 are present in arr2 and vice-versa",
+            "Input: arr1={1,4,2,3,5}, arr2={1,3,2,5,6}",
+            "Output:  false, emement 4 and 6 do not match from arr1 and arr2"
         ]
     },
     {
@@ -377,11 +377,11 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
             "Input: arr={1,2,3,4,1}",
-            "output: 2 3, even numbers are 2 and 4, odd numbers are 1,1,3"
+            "Output:  2 3, even numbers are 2 and 4, odd numbers are 1,1,3"
         ]
     },
     {
@@ -403,11 +403,11 @@
         "tags": [
             "arrays",
             "math",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
             "Input: arr={1,4,3,6,2}",
-            "Output: 5, element 5 is missing in range 1 to 6"
+            "Output:  5, element 5 is missing in range 1 to 6"
         ]
     },
     {
@@ -430,11 +430,11 @@
         "tags": [
             "arrays",
             "maps",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
             "Input: arr={1,2,3,2,1,4}",
-            "Output: 1 2, elements 1 and 2 repeate more than once"
+            "Output:  1 2, elements 1 and 2 repeate more than once"
         ]
     },
     {
@@ -457,13 +457,13 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
-            "1.Input: arr1={1,4,3,2,5}",
-            "Output: false, clearly elements are not in Increasing order",
-            "2.Input: arr1={1,3,4,5}",
-            "output: true, all the elements are in Increasing order"
+            "Input: arr1={1,4,3,2,5}",
+            "Output:  false, clearly elements are not in Increasing order",
+            "Input: arr1={1,3,4,5}",
+            "Output:  true, all the elements are in Increasing order"
         ]
     },
     {
@@ -486,10 +486,10 @@
             "math"
         ],
         "example": [
-            "1.Input: 10",
-            "Output: false, factors of number 10 are 1,2,5 and 10 which clearly do not follow the rule of prime no",
-            "1.Input 5",
-            "output: true, number 5 do not have any factors beside 1 and 5 so it is a prime number"
+            "Input: 10",
+            "Output:  false, factors of number 10 are 1,2,5 and 10 which clearly do not follow the rule of prime no",
+            "Input 5",
+            "Output:  true, number 5 do not have any factors beside 1 and 5 so it is a prime number"
         ]
     },
     {
@@ -514,14 +514,15 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures",
-            "searching"
+            "Data Structures",
+            "searching",
+            "Binary Search"
         ],
         "example": [
-            "1.Input: arr={1,2,3,4,6} target=6",
-            "Output:true, element 6 is present in array at index 4",
-            "2. Input arr = {1,2,3,4,6} target= 10",
-            "Output: element 10 is not present in array"
+            "Input: arr={1,2,3,4,6} target=6",
+            "Output: true, element 6 is present in array at index 4",
+            "Input arr = {1,2,3,4,6} target= 10",
+            "Output:  element 10 is not present in array"
         ]
     },
     {
@@ -546,19 +547,19 @@
         "usersSolved": [],
         "tags": [
             "arrays",
-            "DataStructures",
+            "Data Structures",
             "searching"
         ],
         "example": [
-            "1.Input: arr={1,4,3,6,2} target=6",
-            "Output:true, element 6 is present in array at index 3",
-            "2. Input arr = {1,4,3,6,2} target= 10",
-            "Output: element 10 is not present in array"
+            "Input: arr={1,4,3,6,2} target=6",
+            "Output: true, element 6 is present in array at index 3",
+            "Input arr = {1,4,3,6,2} target= 10",
+            "Output:  element 10 is not present in array"
         ]
     },
     {
         "questionId": "BBLSORT",
-        "questionName": "Sort the Array",
+        "questionName": "Bubble Sort",
         "description": "Given an array, arr[]. Sort the array using bubble sort algorithm.",
         "inputFormat": [
             "An integer t, denoting the number of testcases",
@@ -578,16 +579,16 @@
         "tags": [
             "arrays",
             "sorting",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
-            "1.Input: arr={1,4,3,6,2}",
-            "Output:1 2 3 4 6"
+            "Input: arr={1,4,3,6,2}",
+            "Output: 1 2 3 4 6"
         ]
     },
     {
         "questionId": "MERGSORT",
-        "questionName": "Sort the Array",
+        "questionName": "Merge Sort",
         "description": "Given an array, arr[]. Sort the array using Merge sort algorithm.",
         "inputFormat": [
             "An integer t, denoting the number of testcases",
@@ -607,16 +608,16 @@
         "tags": [
             "arrays",
             "sorting",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
-            "1.Input: arr={1,4,3,6,2}",
-            "Output:1 2 3 4 6"
+            "Input: arr={1,4,3,6,2}",
+            "Output: 1 2 3 4 6"
         ]
     },
     {
         "questionId": "QCKSORT",
-        "questionName": "Sort the Array",
+        "questionName": "Quick Sort",
         "description": "Given an array, arr[]. Sort the array using Quick sort algorithm.",
         "inputFormat": [
             "An integer t, denoting the number of testcases",
@@ -636,11 +637,11 @@
         "tags": [
             "arrays",
             "sorting",
-            "DataStructures"
+            "Data Structures"
         ],
         "example": [
-            "1.Input: arr={1,4,3,6,2}",
-            "Output:1 2 3 4 6"
+            "Input: arr={1,4,3,6,2}",
+            "Output: 1 2 3 4 6"
         ]
     }
 ]
