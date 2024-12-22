@@ -20,7 +20,7 @@
         "difficulty": 600,
         "usersSolved": [],
         "tags": [
-            "arrays"
+            "Arrays"
         ],
         "example": [
             "Input: arr={1,2,3,2,1}",
@@ -49,7 +49,7 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ],
         "example": [
             "Input: 1 3",
@@ -58,29 +58,6 @@
             "Input: 4 3",
             "Output:  ALICE",
             "Sum of dice thrown is 4 + 3 = 7, which is prime no so Alice wins."
-        ]
-    },
-    {
-        "questionId": "FBALL",
-        "questionName": "Football",
-        "description": "Chef is watching a football match. The current score is A:B, that is, team 1 has scored A goals and team 2 has scored B goals. Chef wonders if it is possible for the score to become C:D at a later point in the game (i.e. team 1 has scored C goals and team 2 has scored D goals). Can you help Chef by answering his question?",
-        "inputFormat": [
-            "The first line contains a single integer T - the number of test cases. Then the test cases follow.",
-            "The first line of each test case contains two integers A and B - the intial number of goals team 1 and team 2 have scored respectively.",
-            "The second line of each test case contains two integers C and D - the final number of goals team 1 and team 2 must be able to score respectively. "
-        ],
-        "outputFormat": [
-            "For each testcase, output POSSIBLE if it is possible for the score to become C:DC:D at a later point in the game, IMPOSSIBLE otherwise.",
-            "You may print each character of POSSIBLE and IMPOSSIBLE in uppercase ONLY (for example, possible, pOSsiBLe, Possible will not be considered identical)"
-        ],
-        "constrains": [
-            "1 ≤ T ≤ 1000",
-            "0 ≤ A,B,C,D ≤ 10"
-        ],
-        "difficulty": 400,
-        "usersSolved": [],
-        "tags": [
-            "math"
         ]
     },
     {
@@ -105,7 +82,7 @@
         "difficulty": 400,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ],
         "example":[
             "Input: 3 2 target=6",
@@ -134,7 +111,7 @@
         "difficulty": 410,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ],
         "example": [
             "Input: 10",
@@ -162,7 +139,7 @@
         "difficulty": 440,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ],
         "example": [
             "Input: 2 3 1",
@@ -192,7 +169,7 @@
         "difficulty": 600,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ],
         "example": [
             "Input 5",
@@ -219,7 +196,7 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ],
         "example": [
             "Input: 100 50",
@@ -247,7 +224,7 @@
         "difficulty": 550,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ]
     },
     {
@@ -268,7 +245,7 @@
         "difficulty": 400,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures"
         ],
         "example": [
@@ -295,7 +272,7 @@
         "difficulty": 550,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures"
         ],
         "example": [
@@ -321,7 +298,7 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures"
         ],
         "example": [
@@ -332,14 +309,14 @@
     {
         "questionId": "EQUALARRAY",
         "questionName": "Check Equal Arrays",
-        "description": "Given two arrays arr1 and arr2 of equal size, the task is to find whether the given arrays are equal. Two arrays are said to be equal if both contain the same set of elements, arrangements (or permutations) of elements may be different though.Note: If there are repetitions, then counts of repeated elements must also be the same for two arrays to be equal.",
+        "description": "Given two Arrays arr1 and arr2 of equal size, the task is to find whether the given Arrays are equal. Two Arrays are said to be equal if both contain the same set of elements, arrangements (or permutations) of elements may be different though.Note: If there are repetitions, then counts of repeated elements must also be the same for two Arrays to be equal.",
         "inputFormat": [
             "First line consists of array of size N",
             "Second line consists N integer elements of arr1",
             "Third line consists of N integer element of arr2"
         ],
         "outputFormat": [
-            "Print wether the arrays are ture false "
+            "Print wether the Arrays are ture false "
         ],
         "constrains": [
             "1<= arr1.size, arr2.size<=10000",
@@ -348,7 +325,7 @@
         "difficulty": 600,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures"
         ],
         "example": [
@@ -376,7 +353,7 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures"
         ],
         "example": [
@@ -401,8 +378,8 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "arrays",
-            "math",
+            "Arrays",
+            "Basic Math",
             "Data Structures"
         ],
         "example": [
@@ -428,7 +405,7 @@
         "difficulty": 600,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "maps",
             "Data Structures"
         ],
@@ -456,7 +433,7 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures"
         ],
         "example": [
@@ -483,7 +460,7 @@
         "difficulty": 600,
         "usersSolved": [],
         "tags": [
-            "math"
+            "Basic Math"
         ],
         "example": [
             "Input: 10",
@@ -513,7 +490,7 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures",
             "searching",
             "Binary Search"
@@ -546,7 +523,7 @@
         "difficulty": 500,
         "usersSolved": [],
         "tags": [
-            "arrays",
+            "Arrays",
             "Data Structures",
             "searching"
         ],
@@ -577,8 +554,8 @@
         "difficulty": 550,
         "usersSolved": [],
         "tags": [
-            "arrays",
-            "sorting",
+            "Arrays",
+            "Sorting",
             "Data Structures"
         ],
         "example": [
@@ -606,8 +583,8 @@
         "difficulty": 700,
         "usersSolved": [],
         "tags": [
-            "arrays",
-            "sorting",
+            "Arrays",
+            "Sorting",
             "Data Structures"
         ],
         "example": [
@@ -635,8 +612,8 @@
         "difficulty": 700,
         "usersSolved": [],
         "tags": [
-            "arrays",
-            "sorting",
+            "Arrays",
+            "Sorting",
             "Data Structures"
         ],
         "example": [

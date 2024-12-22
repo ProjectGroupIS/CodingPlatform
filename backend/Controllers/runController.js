@@ -43,7 +43,7 @@ export default async function run(req,res){
         
         await execute(copyfile)
         // fs.copyFileSync(`./TestCases/${questionId}.txt`,'./input.txt')
-        fs.writeFileSync(`Main.${extns}`,code);
+        fs.writeFileSync(`Main.${extns}`,JSON.parse(code));
         await execute(buildImage);
         await execute(opt);
         await execute(clearDangling);
@@ -56,7 +56,7 @@ export default async function run(req,res){
     if(! await compareOutput(questionId)){
         const data = await readFile('./output.txt');
         const messageSend = data.length<1000?data:"Wrong Solution"
-        return message(res,status.NOT_ACCEPTABLE,messageSend)
+        return message(res,status.BAD_REQUEST,messageSend)
     }
    
     try{
@@ -87,11 +87,11 @@ function execute(command){
 
 function getExtensionAndContainer(lang){
     switch(lang){
-        case 'Java':return 'java'
-        case 'C++':return 'cpp'
-        case 'C':return 'c'
-        case 'Python':return 'py'
-        case 'Javascript':return 'js'
+        case 'java':return 'java'
+        case 'cpp':return 'cpp'
+        case 'c':return 'c'
+        case 'python':return 'py'
+        case 'javascript':return 'js'
         default:undefined
     }
 }
