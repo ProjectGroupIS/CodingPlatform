@@ -12,7 +12,7 @@ import { authRouter } from './Routers/authRouter.js'
 import connect from "./DataBase/MongoDb.js"
 import {rateLimit} from 'express-rate-limit'
 // import MongoStore from 'connect-mongo'
-
+import { userRouter } from './Routers/userRouter.js'
 
 const app = express()
 env.config()
@@ -24,7 +24,6 @@ const limiter = rateLimit({
     standardHeaders:'draft-7',
     legacyHeaders:false,
     message:'no of requests execcede limit'
-
 })
 
 
@@ -62,6 +61,7 @@ app.use(limiter)
 app.use('/auth',authRouter);
 app.use('/execute',executeRouter);
 app.use('/problems',problemRouter);
+app.use('/users',userRouter);
 
 
 const port = process.env.PORT|| 9090; 
