@@ -10,9 +10,10 @@ export async function initilize(){
             return done(null,profile)
         }
         
-        const {name,email,sub}= profile._json;
+        const {name,email,sub,picture}= profile._json;
         const newUser = new User({
             name:name,
+            photo:picture,
             email:email,
             googleId:sub,
             userID:email.substring(0,email.lastIndexOf('@')),
@@ -46,17 +47,17 @@ export async function initilize(){
         clientSecret:process.env.CLIENT_SECRETE,
         callbackURL:process.env.CALLBACK,
         // passReqToCallback:true,
-        scope:['profile','email']
+        scope:['profile','email','picture']
     },authenticateGoogle //callback func
     ));
     
     passport.use(new LocalStrategy({usernameField:'email'},authenticateNormal))
 
     passport.serializeUser((user,done)=>{
-        return done(null,user.userID)
+        return done(null,user)
     });
-    passport.deserializeUser((userID,done)=>{
-        return done(null,userID)
+    passport.deserializeUser((user,done)=>{
+        return done(null,user)
     });
 }
    
