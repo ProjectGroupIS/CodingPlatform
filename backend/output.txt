@@ -1,0 +1,4 @@
+Main.java:8: error: ';' expected
+            int size = scan.nextInt()
+                                     ^
+1 error

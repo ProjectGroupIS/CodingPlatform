@@ -59,15 +59,15 @@ export default async function run(req,res){
         return message(res,status.BAD_REQUEST,messageSend)
     }
    
-    try{
-        const userID = req.session.passport.user;
-        const user = await User.findOne({userID:userID});
-        updateUser(user,questionId);
-        updateQuestion(user,questionId);
-        updateCode(req,user,questionId);
-    }catch(error){
-        return message(req,status.INTERNAL_SERVER_ERROR,error)
-    }
+    // try{
+    //     const userID = req.session.passport.user;
+    //     const user = await User.findOne({userID:userID});
+    //     updateUser(user,questionId);
+    //     updateQuestion(user,questionId);
+    //     updateCode(req,user,questionId);
+    // }catch(error){
+    //     return message(res,status.INTERNAL_SERVER_ERROR,error)
+    // }
 
     return message(res,status.OK,'executed successfully')
 }
