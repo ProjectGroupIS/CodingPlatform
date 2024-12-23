@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import SelectionPage from "./SelectionPage";
 import CodeEditorPage from "./Data/CodeEditorPage";
+import ProfilePage from "./Data/ProfilePage.js";
+import LoginPage from "./Data/LoginPage.js"
 
 export default function App() {
     const [darkMode, setDarkMode] = useState(false);
@@ -31,7 +33,16 @@ export default function App() {
                     path="/problems/:id" 
                     element={<CodeEditorPage darkMode={darkMode} />} 
                 />
+             <Route 
+                    path="/profile" 
+                    element={<ProfilePage/>} 
+                /> 
+                <Route
+                path="/login"
+                element={<LoginPage/>}
+                />
             </Routes>
         </>
+        
     );
 }
