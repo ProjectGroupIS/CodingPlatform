@@ -1,48 +1,64 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
-import SelectionPage from "./SelectionPage";
 import CodeEditorPage from "./Data/CodeEditorPage";
-import ProfilePage from "./Data/ProfilePage.js";
-import LoginPage from "./Data/LoginPage.js"
+import SelectionPage from "./Data/SelectionPage";
+import ProfilePage from "./Data/ProfilePage";
+import LoginForm from "./Data/LoginPage";
 
 export default function App() {
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
-        setDarkMode(prevMode => !prevMode);
+        setDarkMode((prevMode) => !prevMode);
     };
 
-    // Apply dark or light mode class globally based on state
+    useState(()=>{
+        if(document.cookie)
+            return setIsAuthenticated(true)
+    })
+
     useEffect(() => {
         if (darkMode) {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('light-mode');
+            document.body.classList.add("dark-mode");
+            document.body.classList.remove("light-mode");
         } else {
-            document.body.classList.add('light-mode');
-            document.body.classList.remove('dark-mode');
+            document.body.classList.add("light-mode");
+            document.body.classList.remove("dark-mode");
         }
     }, [darkMode]);
 
+
+
     return (
         <>
-            <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            {/* Render Navbar only if the user is authenticated */}
+          
+            {isAuthenticated && (
+                <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            )}
             <Routes>
-                <Route path="/" element={<SelectionPage />} />
+                {console.log("before ",isAuthenticated)}
+                <Route 
+                    path="/login" 
+                    element={<LoginForm setIsAuthenticated={setIsAuthenticated} />} 
+                />
+                 {console.log("after",isAuthenticated)}
+                <Route 
+                    path="/" 
+                    element={isAuthenticated ? <SelectionPage /> : <Navigate to="/login" />} 
+                    // element={<SelectionPage/>}
+                />
                 <Route 
                     path="/problems/:id" 
-                    element={<CodeEditorPage darkMode={darkMode} />} 
+                    element={isAuthenticated ? <CodeEditorPage darkMode={darkMode} /> : <Navigate to="/login" />} 
                 />
-             <Route 
+                <Route 
                     path="/profile" 
-                    element={<ProfilePage/>} 
-                /> 
-                <Route
-                path="/login"
-                element={<LoginPage/>}
+                    element={isAuthenticated ? <ProfilePage /> : <Navigate to="/login" />} 
                 />
             </Routes>
         </>
-        
     );
 }

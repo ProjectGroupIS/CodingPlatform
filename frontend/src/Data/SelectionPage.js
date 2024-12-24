@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import RandomProblems from "./Data/RandomProblems";
+import RandomProblems from "./RandomProblems";
 
 export default function SelectionPage() {
     const [problems, setProblems] = useState([]); 

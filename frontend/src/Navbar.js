@@ -14,7 +14,6 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                 alignItems: "center",
             }}
         >
-            {/* Left Section */}
             <div className="left-section">
                 <Link to="/">
                     <img
@@ -25,8 +24,6 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                     />
                 </Link>
             </div>
-
-            {/* Middle Section */}
             <div className="middle-section" style={{ display: "flex", alignItems: "center" }}>
                 <img
                     className="dark-mode-toggle"
@@ -41,10 +38,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                     </li>
                 </ul>
             </div>
-
-            {/* Right Section */}
             <div className="right-section">
-                {/* Update Link Path */}
                 <Link to="/profile">
                     <img
                         className="nav-profile"
@@ -58,7 +52,6 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                         }}
                     />
                 </Link>
-                <Link to="login">login</Link>
             </div>
         </header>
     );

@@ -23,7 +23,7 @@ export const ProfilePage = () => {
   }, []);
 
   const handleSolveProblemClick = () => {
-    navigate("/selection-page");
+    navigate("/");
   };
 
   if (!profileData) {

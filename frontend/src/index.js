@@ -7,11 +7,12 @@ import "./styles/SelectionPage.css";
 import "./styles/CodeEditorPage.css";
 import "./styles/App.css";
 import "./styles/ProfilePage.css";
-import "./styles/LoginForm.css"
+import "./styles/ProfilePage.css";
+import "./styles/LoginForm.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <BrowserRouter>
-        <App />
+        <App/>
     </BrowserRouter>
 );
