@@ -5,18 +5,24 @@ import {ensureAuthenticated, alreadyLoggedIn} from "../Middleware/authentication
 
 const authRouter = e.Router()
 // for google auth
-authRouter.get('/',(req,res)=>res.send('<a href="/auth/google">Google</a>'))
+// authRouter.get('/',(req,res)=>res.send('<a href="/auth/google">Google</a>'))
 authRouter.get('/google',passport.authenticate('google',{scope:['email','profile']}));
 
 authRouter.get('/getData',passport.authenticate('google',
     {
-        successRedirect:'/problems',
-        failureRedirect:'/failure'
+        failureRedirect:'http://localhost:3000/login'
+    }),
+    (req,res)=>{
+        const user = req.session.passport.user._json.email;
+        const id = user.substring(0,user.indexOf('@'))
+        console.log(id)
+        res.cookie("userID",id)
+        res.redirect('http://localhost:3000/')
     }
-));
+);
 
-authRouter.get('/success',(req,res)=>res.send("success"))
-authRouter.get('/failure',(req,res)=>res.send("fail"))
+// authRouter.get('/success',(req,res)=>res.send("success"))
+// authRouter.get('/failure',(req,res)=>res.send("fail"))
 
 
 authRouter.post('/login',alreadyLoggedIn,(req,res,done)=>{

@@ -1,4 +1,6 @@
-Main.java:8: error: ';' expected
-            int size = scan.nextInt()
-                                     ^
+Main.java:2: error: cannot find symbol
+	public static voi main(String[] args) {
+	              ^
+  symbol:   class voi
+  location: class Main
 1 error

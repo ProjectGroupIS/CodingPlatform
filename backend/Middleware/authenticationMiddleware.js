@@ -2,6 +2,7 @@ import { message } from "../utils/message.js";
 import { StatusCodes as status } from "http-status-codes";
 
 export function ensureAuthenticated(req,res,next){
+    console.log(req.session)
     if(req.isAuthenticated()){
         return next();
     }

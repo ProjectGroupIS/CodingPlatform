@@ -68,7 +68,6 @@ export default async function run(req,res){
     // }catch(error){
     //     return message(res,status.INTERNAL_SERVER_ERROR,error)
     // }
-
     return message(res,status.OK,'executed successfully')
 }
 
